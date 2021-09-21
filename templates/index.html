@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{ object_list }}</h1>
+
+{% for obj in object_list %}
+
+<h2>{{ obj.id }}</h2>
+<h2>Дата: {{obj.order_dt}}</h2>
+<h2>Имя: {{ obj.order_n }}</h2>
+<h2>Телефон: {{ obj.order_ph }}</h2>
+{% endfor %}
+</body>
+</html>
